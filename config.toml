@@ -1,0 +1,108 @@
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Redwings Trawell"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Your name"
+	description = "Your description"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "REDWINGS TRAWELL"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Services"
+			portfolio = "Portfolio"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Adventure Unlocked"
+		subtitle   = "At Redwings Trawell we make your travel and adventures worthwhile. You don't need to be worried of arragements, just choose a destination and enjoy it, while we do the hardwork"
+		buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = "We've got what you need!"
+		description = "Redwings Trawell provides travel services to our clients which includes Tour packages, Tickets booking, Hotel reservations, Setting up the local help and Guides in the destinations to ease your travel"
+		buttonText  = "Get started!"
+		
+
+
+	# Service section
+	[params.services]
+		headline = "At your service"
+
+        [[params.services.list]]
+            icon = "fa-suitcase"
+            title = "Travel exotic"
+            description = "With our comprehensive tour packages"
+
+        [[params.services.list]]
+			icon = "fa-hotel"
+			title = "Hotel Reservations"
+			description = "We book best hotels in cheap price"
+
+		[[params.services.list]]
+            icon = "fa-map"
+            title = "Local Help"
+            description = "We setup local guides and transport"
+
+        [[params.services.list]]
+            icon = "fa-bus"
+            title = "Tickets Booking"
+            description = "Flights and train bookings done right"
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Don't wait more!"
+
+		[params.aside.button]
+			text = "Contact Us Now"
+			link = "#contact"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Ready to start your next tour with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+		phone = "99529-33626 or 99761-60688"
+		email = "feedback@startbootstrap.com"
+
+	# Google Maps section
+	# [params.location]
+	# 	latitude  = "34.007850"
+	# 	longitude = "-118.499305"
+	# 	maps_api_key = ""
